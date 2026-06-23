@@ -4,9 +4,9 @@ import joblib
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
-model = joblib.load(BASE_DIR / "models" / "credit_scoring_model.pkl")
-scaler = joblib.load(BASE_DIR / "models" / "scaler.pkl")
-feature_names = joblib.load(BASE_DIR / "models" / "feature_names.pkl")
+model = joblib.load(BASE_DIR / "credit_scoring_model.pkl")
+scaler = joblib.load(BASE_DIR / "scaler.pkl")
+feature_names = joblib.load(BASE_DIR / "feature_names.pkl")
 
 st.set_page_config(
     page_title="Credit Scoring Model",
