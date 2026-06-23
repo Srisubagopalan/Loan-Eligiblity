@@ -1,13 +1,12 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from pathlib import Path
 
-# -----------------------------
-# Load Files
-# -----------------------------
-model = joblib.load("models/credit_scoring_model.pkl")
-scaler = joblib.load("models/scaler.pkl")
-feature_names = joblib.load("models/feature_names.pkl")
+BASE_DIR = Path(__file__).parent
+model = joblib.load(BASE_DIR / "models" / "credit_scoring_model.pkl")
+scaler = joblib.load(BASE_DIR / "models" / "scaler.pkl")
+feature_names = joblib.load(BASE_DIR / "models" / "feature_names.pkl")
 
 st.set_page_config(
     page_title="Credit Scoring Model",
