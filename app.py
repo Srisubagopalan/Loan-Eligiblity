@@ -89,13 +89,6 @@ st.markdown("<div class='title'>🏦 Loan Eligibility Prediction </div>", unsafe
 
 st.markdown("<div class='subtitle'>Loan Approval Prediction</div>", unsafe_allow_html=True)
 
-st.write("")
-col1, col2, col3 = st.columns(3)
-
-col1.metric("Models", "3")
-col2.metric("Accuracy", "97%")
-col3.metric("Status", "Active")
-
 st.write("Enter Customer Financial Details : ")
 
 st.divider()
